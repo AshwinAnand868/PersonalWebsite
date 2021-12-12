@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Dancing+Script:wght@700&family=Kanit&family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+
+.mainbody{
+    background-color:	rgb(24,24,24);
+    margin-top:0;
+}
+
+.myimage{
+    height:320px;
+    width:320px;
+   background-repeat: no-repeat;
+   margin-top:5%;
+   margin-left:auto;
+   margin-right: auto;
+   display:block;
+}
+.myname{
+    color:white;
+    font-family: "Kanit";
+    font-size:50px;
+    margin-top:10px;
+    margin-bottom:0px;
+    text-align: center;
+}
+
+.myprofession{
+    font-family: "Kanit";
+    color:white;
+    margin-top:30px;
+    font-size:18px;
+    text-align: center;
+
+}
+
+.btns{
+    display:flex;
+    margin-left: 500px;
+}
+.resumebtn, .contactbtn,.honestybtn{
+    background-color: rgb(56,56,56);
+    border:black;
+    color: white;
+    padding: 17px 32px;
+    border-radius:25px;
+    text-align: center;
+    font-size: 16px;
+    margin-top:20px;
+    cursor: pointer;
+}
+.resumebtn:hover, .contactbtn:hover, .honestybtn:hover{
+    background-color: rgb(80,80,80);
+}
+
+.contactbtn, .honestybtn{
+    margin-left: 50px;
+}
+i{
+    color:white;
+    font-size:15px;
+    margin-right:8px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and (min-width:1280px) and (max-width:1450px){
+  .btns{
+      margin-left:450px;
+  }
+}
+@media screen and (min-width:1170px) and (max-width:1285px){
+    .btns{
+        margin-left:405px;
+    }
+}
+@media screen and (min-width:1030) and (max-width:1170px){
+    .btns{
+        width:200px;
+        margin-left:430px;
+    }
+    .contactbtn{
+        margin-left:0;
+    }
+}
+@media screen and (max-width:1030px){
+    .mainbody{
+        float:left;
+        margin-left:100px;
+    }
+    .btns{
+        margin-left:20px;
+        width:100%;
+    }
+    
+}
+
+
+
