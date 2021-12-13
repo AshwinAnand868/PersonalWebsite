@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-html{
-margin:0px;
-}
-
 body{
     display:flex;
     margin:0px;
@@ -23,11 +16,11 @@ body{
     border-top:0;
     border-bottom: 0;
     background-color: rgb(197, 214, 135);
-    height:100.5vh;
+    text-align: center;
+
 }
 
 .formPage{
-    width:83%;
     margin: 10px;
 }
 
@@ -52,12 +45,12 @@ body{
 }
 
 .forMain, .forResume{
-    
     margin-top:120px;
     border: 4px solid rgb(75, 119, 45);;
     border-radius:260px;
     width:200px;
     height: 110px;
+    margin-left:10px;
 }
 .forResume{
     position: relative;
@@ -70,17 +63,13 @@ body{
 }
 
 .mainPage, .resPage{
-    position:relative;
-    top:40px;
-    left:48px;
     text-decoration:none;
     font-size:20px;
     font-style:oblique;
     font-weight:bold;
     color:rgb(75, 119, 45);
-}
-.resPage{
-   left:60px;
+    position: relative;
+    top:40px;
 }
 
 .contactForm{
@@ -193,16 +182,13 @@ input[type=radio]{
 }
 
 .textarea{
-    width:86%;
     border: 2px solid rgb(75, 119, 45);
     box-sizing: border-box;
     border-radius: 4px;
     resize: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:20px;
-    margin-bottom: 0px;
-    margin-left:30px;
-  
+    margin-bottom: 0px;  
 }
 
 .hire{
@@ -218,9 +204,7 @@ input[type=radio]{
 }
 
 .input{
-    position: relative;
-    top:80px;
-    left:100px;
+margin-top:80px;
 }
 
 #submit, #reset{
@@ -243,3 +227,9 @@ input[type=radio]{
     background-color: rgb(50, 124, 50);
 }
 
+@media screen and (max-width:1300px) {
+  .textarea{
+      width:60%;
+  }
+    
+}
