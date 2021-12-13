@@ -231,6 +231,7 @@ input[type=radio]{
     font-size:20px;
     color:white;
     border:none;
+    cursor: pointer;
 }
 
 
@@ -240,6 +241,5 @@ input[type=radio]{
 
 #submit:hover, #reset:hover{
     background-color: rgb(50, 124, 50);
-    cursor: pointer;
 }
 
