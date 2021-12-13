@@ -50,27 +50,27 @@
                     <div class="pCode">
                         <label for="uPCode" class="labelForm">Postal Code: </label>
                         <input type="text" name="uPCode" id="uPcode" tabindex="5"
-                        pattern="^[A-Za-z]\d{1}[A-Za-z][ ]?\d{1}[A-za-z]\d{1}$" maxlength="7" minlength="6"
-                        required >
+                        pattern="^[A-Za-z]\d{1}[A-Za-z][ ]?\d{1}[A-za-z]\d{1}$"
+                        required maxlength="7" minlength="6">
                     </div>
                 </div>
                 <div class="row3">
                     <div class="reason">
                         <p class="selection">Please choose reason: </p>
-                        <input type="radio" id="ques" name="reason" value="question" tabindex="6" checked  onclick="addTextArea();" required>
+                        <input type="radio" id="ques" name="reason" value="question" tabindex="6" checked  onclick="addTextArea();">
                         <label class="reasonLabel" for="question">Question</label><br>
-                        <input type="radio" id="comment" name="reason" value="comment" tabindex="7"  onclick="addTextArea();" required>
+                        <input type="radio" id="comment" name="reason" value="comment" tabindex="7"  onclick="addTextArea();">
                         <label class="reasonLabel" for="comment">Comment</label><br>
-                        <input  type="radio" id="hiring" name="reason" value="hiring" tabindex="8" onclick="addTextArea();" required>
+                        <input  type="radio" id="hiring" name="reason" value="hiring" tabindex="8" onclick="addTextArea();">
                         <label class="reasonLabel" for="hiring">Hiring</label><br>
                     </div>
                     <div class="input">
                         <div class="quescomm">
-                            <textarea id="textarea" name="commques" class="textarea" rows="5" cols="70" placeholder="Type in your question or comment in the given text area" required></textarea>
+                            <textarea id="textarea" name="commques" class="textarea" rows="5" cols="70" placeholder="Type in your question or comment in the given text area"></textarea>
                         </div>
                         <div class="hire" id="hire">
                             <label for="dollars" class="dollars">$</label>
-                            <input type="number" placeholder="Enter hourly pay rate " name="payrate" id="payrate" min="1" required>
+                            <input type="number" placeholder="Enter hourly pay rate " name="payrate" id="payrate" min="1">
                         </div>
                     </div>
                 </div>
