@@ -57,20 +57,20 @@
                 <div class="row3">
                     <div class="reason">
                         <p class="selection">Please choose reason: </p>
-                        <input type="radio" id="ques" name="reason" value="question" tabindex="6" checked  onclick="addTextArea();">
+                        <input type="radio" id="ques" name="reason" value="question" tabindex="6" checked  onclick="addTextArea();" required>
                         <label class="reasonLabel" for="question">Question</label><br>
-                        <input type="radio" id="comment" name="reason" value="comment" tabindex="7"  onclick="addTextArea();">
+                        <input type="radio" id="comment" name="reason" value="comment" tabindex="7"  onclick="addTextArea();" required>
                         <label class="reasonLabel" for="comment">Comment</label><br>
-                        <input  type="radio" id="hiring" name="reason" value="hiring" tabindex="8" onclick="addTextArea();">
+                        <input  type="radio" id="hiring" name="reason" value="hiring" tabindex="8" onclick="addTextArea();" required>
                         <label class="reasonLabel" for="hiring">Hiring</label><br>
                     </div>
                     <div class="input">
                         <div class="quescomm">
-                            <textarea id="textarea" name="commques" class="textarea" rows="5" cols="70" placeholder="Type in your question or comment in the given text area"></textarea>
+                            <textarea id="textarea" name="commques" class="textarea" rows="5" cols="70" placeholder="Type in your question or comment in the given text area" required></textarea>
                         </div>
                         <div class="hire" id="hire">
                             <label for="dollars" class="dollars">$</label>
-                            <input type="number" placeholder="Enter hourly pay rate " name="payrate" id="payrate" min="1">
+                            <input type="number" placeholder="Enter hourly pay rate " name="payrate" id="payrate" min="1" required>
                         </div>
                     </div>
                 </div>
