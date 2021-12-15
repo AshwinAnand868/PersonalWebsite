@@ -1,0 +1,118 @@
+<!--
+    Name - Ashwin Anand
+    Student id - 152042206
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin Anand_Program2</title>
+</head>
+<body style="text-align: center;">
+    <div>
+    <h3>ABC Dental Clinic</h3>
+    <h3>--------------------</h3>
+
+    <br>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <br>
+
+    <h3>-----------------------------------------------------------------</h3>
+   
+    </div>
+
+    <script type="text/javascript">
+    var total,p1,p2,p3,p4,p5, subtotal = 0;
+    var cleaningRate = 60, cavityFillRate = 200
+    , xrayRate = 100, tax = 15, noOfPatients = 2;
+
+    var patientNames = [];
+    var cleaningDone = [];
+    var cavityFillDone = [];
+    var xrayDone = [];
+
+for(var i = 0; i < noOfPatients; i++)
+{
+    patientNames[i] = prompt("Enter patient name");
+    cleaningDone[i] = prompt("Was cleaning performed?(y/n)");
+    cavityFillDone[i] = prompt("Was cavity-filling performed?(y/n)");
+    xrayDone[i] = prompt("Was X-Ray performed?(y/n)")
+    p1 = document.getElementById("1");
+    p1.innerHTML="1- Cleaning rate: $" + cleaningRate;
+    p2 = document.getElementById("2");
+    p2.innerHTML="2- Cavity filling rate: $" + cavityFillRate;
+    p3 = document.getElementById("3");
+    p3.innerHTML="3- X-Ray rate: $" + xrayRate;
+    p4 = document.getElementById("4");
+    p4.innerHTML="4- Tax rate: " + tax + "%";
+    
+    document.write("Receipt for patient name: " + patientNames[i]);
+   
+    
+    if(cleaningDone[i] == "n" && cavityFillDone[i] == "y" && xrayDone[i] == "y")
+    {
+       subtotal = cavityFillRate + xrayRate;
+    }
+    else if(xrayDone[i] == "n" && cleaningDone[i] == "n" && cavityFillDone[i] == "y")
+    {
+       subtotal = cavityFillRate;
+    }
+    else if(cavityFillDone[i] == "n" && cleaningDone[i] == "n" && xrayDone[i] == "y")
+    {
+       subtotal = xrayRate;
+    }
+    else if(cavityFillDone[i] == "n" && cleaningDone[i] == "y" && xrayDone[i] =="y")
+    {
+        subtotal = cleaningRate + xrayRate;
+    }
+    else if(cavityFillDone[i] == "n" && cleaningDone[i] == "n" && xrayDone[i] == "y")
+    {
+       subtotal = xrayRate;
+    }
+    else if(cavityFillDone[i] == "n" && xrayDone[i] == "n" && cleaningDone[i] == "y")
+    {
+       subtotal = cleaningRate;
+    }
+    else if(xrayDone[i] == "n" && cavityFillDone[i] == "y" && cleaningDone[i] == "y")
+    {
+        subtotal = cavityFillRate + cleaningRate;
+    }   
+    else if(cleaningDone[i] == "n" && xrayDone[i] == "n" && cavityFillDone == "y" )
+    {
+       subtotal = cavityFillRate;
+    }
+    else if(cavityFillDone[i] == "n" && xrayDone[i] == "n" && cleaningDone[i] == "y")
+    {
+       subtotal =cleaningRate;
+    }
+    else if(cavityFillDone[i] == "y" && xrayDone[i] == "y" && cleaningDone[i] == "y")
+    {
+       subtotal = cleaningRate + cavityFillRate + xrayRate;
+    }
+    document.write("<br>");
+     document.write("Sub-total : $",subtotal,"<br>");
+    document.write("Tax : $",tax,"<br>");
+    document.write("-------------");
+
+   withTaxAmt = tax * subtotal;
+    withTaxAmt /= 100;
+    total = subtotal+ withTaxAmt;
+    document.write("<br>");
+    document.write("Total : $", total, "<br><br>");
+
+    document.write("-----------------------------------------------------------------<br><br>");
+    subtotal = 0;
+     total = 0;
+     withTaxAmt = 0;
+
+   }
+
+    </script>
+</body>
+
+</html>

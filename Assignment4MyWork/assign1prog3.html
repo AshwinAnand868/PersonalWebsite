@@ -1,0 +1,87 @@
+
+<!--
+    Name - Ashwin Anand
+    Student id - 152042206
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin Anand_Program3</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    smallCalc();
+    function smallCalc()
+{
+   var firstNumber = prompt("Enter first number: ");
+   var secondNumber = prompt("Enter second number: ");
+   var operator = prompt("Enter operator of your calculation: ");
+     var result = 0, keepAsking;
+  
+  keepAsking = 0;
+    
+ 
+    switch(operator)
+       {
+       case "+":
+       result = firstNumber + secondNumber;
+       break;
+       case "*":
+       result = firstNumber * secondNumber;
+       break;
+       case "/":
+       result = firstNumber / secondNumber;
+       break;
+       case "-":
+       result = firstNumber - secondNumber;
+       break;
+       default:
+           alert("Invalid operator entered!");
+        }
+   
+   alert("The formula becomes " + firstNumber + " " + operator + " " + 
+   secondNumber + " which gives the output as: " + result);
+    
+   
+     var forCal = prompt("Do you want to use the calculator again(y/n)");
+    
+     if(forCal == "y")
+     {
+         smallCalc();
+         keepAsking = 1;
+     }
+     else(forCal == "n")
+     {
+         document.write("Your first entered number is: " + firstNumber);
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Your second entered number is: " + secondNumber);
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Your entered operator is:  " + operator);
+         document.write("<br>");
+         document.write("<br>");
+         document.write("The resultant calculation " + firstNumber + " " + operator + " " + 
+         secondNumber + "gave the output as: " + result  );
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Thank you for using my calculator");
+         document.write("<br>");
+         document.write("<br>");
+         document.write("Goodbye");
+         document.write("<br>");
+         document.write("<br>");
+     }
+   
+
+}
+  
+    
+   // var keepAsking
+    </script>
+</body>
+</html>
